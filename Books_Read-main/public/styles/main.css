@@ -1,0 +1,77 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+body {
+    background-color: rgb(191, 227, 241); /* Mint Green Background */
+    font-family: 'Roboto', sans-serif; /* General font family */
+}
+
+#readers {
+    background: linear-gradient(to right, rgba(19, 232, 79, 0.864), rgb(162, 249, 142)); /* Light Green Gradient */
+    color: rgb(12, 148, 179); 
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+h1 {
+    font-family: 'Playfair Display', serif; 
+    margin: 1rem; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.header_pop {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header_pop:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.book-cover-container {
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-cover-container:hover {
+    transform: scale(1.05);
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .book-cover-container {
+        max-width: 200px;
+        margin-top: 2rem;
+    }
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
